@@ -12,7 +12,9 @@ var app = new Vue({
   methods: {
     addStudent: function(){
       this.students.push({name: this.name, course: this.course, period: this.period})
-
+      this.name = ''
+      this.course = ''
+      this.period = ''
     }
   }
 })
